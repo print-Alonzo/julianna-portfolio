@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julianna Alexis E. Palileo | Career Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    :root {
+      --primary: #1F2D3D;
+      --background: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --accent: #007B8A;
+      --text-light: #6B7280;
+      --nav-bg: #FFFFFF;
+      --highlight: #E0F2F1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--background);
+      color: var(--primary);
+      line-height: 1.7;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    nav {
+      background: var(--nav-bg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 0.75rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--primary);
+      padding: 0.25rem 0.5rem;
+      border-radius: 8px;
+    }
+    nav a i {
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
+    }
+    nav a.active, nav a:hover {
+      background-color: var(--accent);
+      color: var(--card-bg);
+    }
+    header {
+      background: var(--card-bg);
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      color: var(--text-light);
+    }
+    .profile {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1.5rem;
+      background: #ccc;
+    }
+    main {
+      max-width: 1024px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+    section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, opacity 0.45s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+      border-left: 5px solid var(--accent);
+      padding-left: 1rem;
+    }
+    .resume-entry {
+      margin-bottom: 1.75rem;
+    }
+    .position {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .location-date {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .description ul {
+      padding-left: 1.25rem;
+    }
+    .description li {
+      margin-bottom: 0.5rem;
+    }
+    .description strong {
+      color: var(--primary);
+    }
+    @media (max-width: 640px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      nav a {
+        font-size: 0.65rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#introduction"><i class="fas fa-user"></i>Intro</a>
+    <a href="#pck"><i class="fas fa-brain"></i>PCK</a>
+    <a href="#work"><i class="fas fa-briefcase"></i>Work</a>
+    <a href="#education"><i class="fas fa-graduation-cap"></i>Edu</a>
+    <a href="#leadership"><i class="fas fa-users"></i>Lead</a>
+    <a href="#skills"><i class="fas fa-star"></i>Skills</a>
+    <a href="#samples"><i class="fas fa-file-alt"></i>Samples</a>
+  </nav>
+
+  <header>
+    <img src="https://via.placeholder.com/160" alt="Profile Picture" class="profile" />
+    <h1>Julianna Alexis E. Palileo</h1>
+    <p>BS in Accountancy | De La Salle University</p>
+    <p><a href="https://www.linkedin.com/in/julianna-alexis-palileo-1b86a9283" target="_blank">LinkedIn</a> · <a href="https://dlsu-vcf-csm.symplicity.com/profiles/juliannaalexis.palileo" target="_blank">LSLink</a></p>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h2>Self-Introduction</h2>
+      <p>I am Julianna Alexis E. Palileo, an ID 122 undergraduate student studying the Bachelor of Science in Accountancy. I am currently 20 years old and I was born on November 18, 2004. I am studying accountancy in hopes of becoming a certified public accountant and lawyer in the future. I live in Las Pinas City and have only one sibling. I also love joining organizations and doing performing arts specifically, dancing and singing.</p>
+    </section>
+    
+    <section id="pck">
+      <h2>Reflection on PCK Results</h2>
+      <p>According to my PCK results I am particularly suited for enterprising and artistic jobs. This comes as no surprise to me as I love taking on the role of a leader and project manager— additionally my experience in performing arts and the industry in general would come in handy for any artistically heavy jobs. Furthermore in a work environment I typically look for recognition, achievement, and working conditions. This aligns with my passion for succeeding and generating positive or successful results. Furthermore I am particularly proficient in numerical or mathematical problems and interpreting and analyzing written information which is very fitting for the course I am currently pursuing. My main jobs were aligned with program directors, producers, financial managers, and lawyers.</p>
+    </section>
+    
+    <section id="work">
+      <h2>Work Experience</h2>
+      <div class="resume-entry">
+        <div class="location-date">
+          <span class="position">NTH Entertainment – Artist</span>
+          <span>Taguig, Manila | May to October 2022</span>
+        </div>
+        <div class="description">
+          <ul>
+            <li>At the time NTH Entertainment was a start-up entertainment company with both trainees and artists. My group was the first marketable artist under the company. Despite being employees we were in charge of brainstorming and creating our own content.</li>
+            <li>Aside from being an active artist I was also a social media manager and an active project planner.
+              <ul>
+                <li>Under my supervision our Tiktok account was able to reach 5,000 followers and 400,000 likes within a year. I was able to do this by crafting a social media calendar for each month that had assigned content per day or week. The content was specific to our branding as a group and what was currently famous in the market.</li>
+                <li>With the help of my fellow members we were able to produce several dance covers, vlogs, and even perform in schools such as De La Salle University and San Beda University. Each of these events were treated as projects. I contributed by being the assigned secretary in our meetings and scheduling practices, posting dates, captions, and more.</li>
+              </ul>
+            </li>
+            <li>My experience with NTH Entertainment taught me a lot about the entertainment industry and what goes into making content. Fortunately, this company allowed me to experience content creation both as an artist and as a behind-the-scenes staff.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="resume-entry">
+        <div class="location-date">
+          <span class="position">Lasallian Ambassador – Non-First Timer</span>
+          <span>Taft, Manila | 2022 to Present</span>
+        </div>
+        <div class="description">
+          <ul>
+            <li>Represented DLSU in events such as LPEP, Gawad Lasalyano, campus tours, and ushering duties.</li>
+            <li>First year: Served in the human resource committee—organized team building events, oversaw team dynamics, and hosted multiple workshops.</li>
+            <li>Second year: Joined documentation/publications—worked on event photography, video editing, captions, and content creation for sponsor promotion.</li>
+            <li>Learned professionalism, event execution, corporate communication, and sponsor coordination.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="education">
+      <h2>Education</h2>
+      <div class="resume-entry">
+        <div class="location-date">
+          <span class="position">De La Salle University – BS Accountancy</span>
+          <span>Expected October 2026</span>
+        </div>
+        <div class="description">
+          <ul>
+            <li>Cumulative GPA: 3.2</li>
+            <li>Consistent First Dean’s Lister (1st and 2nd Year)</li>
+            <li>Active member and associate in: COSCA, CSO, USG, SCI, LAmbs, AJAA, AU, JPIA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="leadership">
+      <h2>Leadership Experience</h2>
+      <div class="resume-entry">
+        <div class="location-date">
+          <span class="position">Council of Student Organizations – HR Associate</span>
+          <span>Taft, Manila | Aug 2022 – Aug 2023</span>
+        </div>
+        <div class="description">
+          <ul>
+            <li>Served as Project Head for several events, including:</li>
+            <li><strong>LinkedIn Workshop:</strong> Promoted LinkedIn usage, invited a speaker, created flow, script, and promotional materials.</li>
+            <li><strong>CSO General Assembly:</strong> Managed event focused on teambuilding and recognition, prepared program flow and logistics.</li>
+            <li>Gained event planning, adaptability, and execution skills through start-to-finish management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-entry">
+        <div class="location-date">
+          <span class="position">AJA Animo – Assistant Director for Artist Management</span>
+          <span>Taft, Manila | Sept 2024 – Present</span>
+        </div>
+        <div class="description">
+          <ul>
+            <li>Planned and executed department projects and performances.</li>
+            <li>Directed two major performances including a university-wide competition—managed song selection, practices, costumes, and team execution.</li>
+            <li>Oversaw publication, documentation, and program flow for the general assembly event.</li>
+            <li>Developed strong skills in planning, quality assurance, and scheduling.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills">
+      <h2>Skills & Interests</h2>
+      <div class="description">
+        <ul>
+          <li><strong>Skills:</strong> Microsoft Office, Canva, Capcut, Photography, Video Editing, Script Writing, Project Planning, Hosting, Zoom</li>
+          <li><strong>Interests:</strong> Writing, Dancing, Singing, Photography, Video Editing</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section id="samples">
+      <h2>Academic Work Samples</h2>
+      <div class="description">
+        <ul>
+          <li><a href="https://docs.google.com/document/d/1AwjRQJ6L9CoyI4dHfVKiIdEr-FOIE2AYZgGTEaDJisg" target="_blank">COBEDEV Paper</a></li>
+          <li><a href="https://docs.google.com/document/d/1y41O-xYkHgllWL3INubyI-MRKjSfW1Yq_cMA9g7pprQ" target="_blank">ACYASR Capstone</a></li>
+          <li><a href="https://docs.google.com/document/d/1hEYw3RWBjW4iuKprfS5HqE2U0dOODI5TdFc28tHusyg" target="_blank">NTH Marketing Paper</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+  
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute("id");
+          const navItem = document.querySelector(`nav a[href='#${id}']`);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            navLinks.forEach(link => link.classList.remove("active"));
+            if (navItem) navItem.classList.add("active");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Force visible class on load if already in view
+    window.addEventListener('DOMContentLoaded', () => {
+      sections.forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('visible');
+        }
+      });
+    });
+    
+  </script>
+</body>
+</html>
